@@ -10,23 +10,23 @@ const Main = () => {
                 <ul>
                     <li>
                         <img className='logo' src="../public/img/buy-comics-digital-comics.png" alt="" />
-                        <a href='#'>DIGITAL COMICS</a>
+                        <a href='#' className='b-hover'>DIGITAL COMICS</a>
                     </li>
                     <li>
                         <img className='logo' src="../public/img/buy-comics-merchandise.png" alt="" />
-                        <a href='#'>DC MERCHANDISE</a>
+                        <a href='#' className='b-hover'>DC MERCHANDISE</a>
                     </li>
                     <li>
                         <img className='logo' src="../public/img/buy-comics-subscriptions.png" alt="" />
-                        <a href='#'>SUBSCRIPTION</a>
+                        <a href='#' className='b-hover'>SUBSCRIPTION</a>
                     </li>
                     <li>
                         <img className='logo' src="../public/img/buy-comics-shop-locator.png" alt="" />
-                        <a href='#'>COMIC SHOP LOCATOR</a>
+                        <a href='#' className='b-hover'>COMIC SHOP LOCATOR</a>
                     </li>
                     <li>
                         <img className='logo' src="../public/img/buy-dc-power-visa.svg" alt="" />
-                        <a href='#'>COMIC SHOP LOCATOR</a>
+                        <a href='#' className='b-hover'>COMIC SHOP LOCATOR</a>
                     </li>
                 </ul>
             </div>
