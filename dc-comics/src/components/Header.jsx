@@ -10,7 +10,7 @@ const Header = () => {
             <nav className="navbar">
                 <ul className='nav-list'>
                     <li><a href='#'>CHARACTERS</a></li>
-                    <li className='blue'><a href='#'>COMICS</a></li>
+                    <li><a href='#' className='blue'>COMICS</a></li>
                     <li><a href='#'>MOVIES</a></li>
                     <li><a href='#'>TV</a></li>
                     <li><a href='#'>GAMES</a></li>
