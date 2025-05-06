@@ -4,7 +4,7 @@ const ComicCard = ({ comic }) => {
     return (
         <div className='comic-card'>
             <img src={comic.thumb} alt={comic.title} className='card-img' />
-            <h3>{comic.series}</h3>
+            <h3 className='card-txt'>{comic.series}</h3>
         </div>
     )
 }
