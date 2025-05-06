@@ -3,9 +3,6 @@ import React from 'react';
 const Main = () => {
     return (
         <main>
-            <div className='container1'>
-                <h1>&#x2192;Content goes here&#x2190;</h1>
-            </div>
             <div className='container2'>
                 <ul>
                     <li>
