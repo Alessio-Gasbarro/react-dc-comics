@@ -13,27 +13,27 @@ const FooterList = () => {
                         <ul className="footer-social-list">
                             <li className="footer-social-item">
                                 <a href="#" className="footer-social-link">
-                                    <img src="./public/img/footer-facebook.png" alt="Facebook" />
+                                    <img src="./img/footer-facebook.png" alt="Facebook" />
                                 </a>
                             </li>
                             <li className="footer-social-item">
                                 <a href="#" className="footer-social-link">
-                                    <img src="./public/img/footer-twitter.png" alt="Twitter" />
+                                    <img src="./img/footer-twitter.png" alt="Twitter" />
                                 </a>
                             </li>
                             <li className="footer-social-item">
                                 <a href="#" className="footer-social-link">
-                                    <img src="./public/img/footer-youtube.png" alt="YouTube" />
+                                    <img src="./img/footer-youtube.png" alt="YouTube" />
                                 </a>
                             </li>
                             <li className="footer-social-item">
                                 <a href="#" className="footer-social-link">
-                                    <img src="./public/img/footer-pinterest.png" alt="Pinterest" />
+                                    <img src="./img/footer-pinterest.png" alt="Pinterest" />
                                 </a>
                             </li>
                             <li className="footer-social-item">
                                 <a href="#" className="footer-social-link">
-                                    <img src="./public/img/footer-periscope.png" alt="Periscope" />
+                                    <img src="./img/footer-periscope.png" alt="Periscope" />
                                 </a>
                             </li>
                         </ul>

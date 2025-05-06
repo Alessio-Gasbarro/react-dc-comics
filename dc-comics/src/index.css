@@ -129,6 +129,7 @@ main .container2 {
 
 /*FOOTERLIST*/
 .foot-list-container {
+  padding-top: 20px;
   background-color: #303030;
   height: 100px;
 }
@@ -145,6 +146,10 @@ main .container2 {
   width: 100%;
 }
 
+.footer-signup {
+  padding-left: 15px;
+}
+
 .footer-signup-btn {
   background-color: transparent;
   color: white;
@@ -157,6 +162,7 @@ main .container2 {
 }
 
 .footer-social {
+  padding-right: 15px;
   display: flex;
   align-items: center;
 }
