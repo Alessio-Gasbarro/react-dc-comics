@@ -1,28 +1,31 @@
-import React from 'react'
+import logo from '../assets/img/dc-logo.png'
 
 const Header = () => {
     return (
-        <header className='container'>
-            <figure>
-                <img src="../public/img/dc-logo.png" alt="" />
-            </figure>
+        <>
+            <header className='container'>
+                <div>
+                    <figure>
+                        <img src={logo} alt="" />
+                    </figure>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">CHARACTERS</a></li>
+                        <li className='active'><a href="#">COMICS</a></li>
+                        <li><a href="#">MOVIES</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">GAMES</a></li>
+                        <li><a href="#">COLLECTIBLES</a></li>
+                        <li><a href="#">VIDEOS</a></li>
+                        <li><a href="#">FANS</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                    </ul>
+                </div>
+            </header>
+        </>
+    )
+}
 
-            <nav className="navbar">
-                <ul className='nav-list'>
-                    <li><a href='#'>CHARACTERS</a></li>
-                    <li><a href='#' className='blue'>COMICS</a></li>
-                    <li><a href='#'>MOVIES</a></li>
-                    <li><a href='#'>TV</a></li>
-                    <li><a href='#'>GAMES</a></li>
-                    <li><a href='#'>COLLECTIBLES</a></li>
-                    <li><a href='#'>VIDEOS</a></li>
-                    <li><a href='#'>FANS</a></li>
-                    <li><a href='#'>NEWS</a></li>
-                    <li><a href='#'>SHOP</a></li>
-                </ul>
-            </nav>
-        </header>
-    );
-};
-
-export default Header;
+export default Header

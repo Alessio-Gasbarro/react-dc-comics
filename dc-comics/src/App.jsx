@@ -1,21 +1,18 @@
 import './index.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import FooterList from './components/FooterList';
-import ListComics from './components/ListComics';
+import Header from './components/header';
+import Main from './components/main';
+import Footer from './components/footer';
+import './App.css'
 
 function App() {
 
   return (
     <>
-      <Header></Header>
-      <ListComics></ListComics>
-      <Main></Main>
-      <Footer></Footer>
-      <FooterList></FooterList>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }
 
-export default App;
+export default App

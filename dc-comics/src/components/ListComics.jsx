@@ -1,4 +1,4 @@
-import ComicCard from "./ComicCard";
+import ComicsCard from "./ComicCard";
 
 const comics = [
     {
@@ -157,31 +157,24 @@ const comics = [
 
 const ListComics = () => {
     return (
-        <section className="comics-list">
-            <div className="comics-header">
-                <div className="current-series-badge">CURRENT SERIES</div>
+        <>
+            <div className="card-container d-flex flex-wrap">
+                <ComicsCard title={comics[0].title} thumb={comics[0].thumb} />
+                <ComicsCard title={comics[1].title} thumb={comics[1].thumb} />
+                <ComicsCard title={comics[2].title} thumb={comics[2].thumb} />
+                <ComicsCard title={comics[3].title} thumb={comics[3].thumb} />
+                <ComicsCard title={comics[4].title} thumb={comics[4].thumb} />
+                <ComicsCard title={comics[5].title} thumb={comics[5].thumb} />
+                <ComicsCard title={comics[6].title} thumb={comics[6].thumb} />
+                <ComicsCard title={comics[7].title} thumb={comics[7].thumb} />
+                <ComicsCard title={comics[8].title} thumb={comics[8].thumb} />
+                <ComicsCard title={comics[9].title} thumb={comics[9].thumb} />
+                <ComicsCard title={comics[10].title} thumb={comics[10].thumb} />
+                <ComicsCard title={comics[11].title} thumb={comics[11].thumb} />
             </div>
-            <div className="container card-container">
-                <div className="card-list">
-                    <ComicCard comic={comics[0]} />
-                    <ComicCard comic={comics[1]} />
-                    <ComicCard comic={comics[2]} />
-                    <ComicCard comic={comics[3]} />
-                    <ComicCard comic={comics[4]} />
-                    <ComicCard comic={comics[5]} />
-                    <ComicCard comic={comics[6]} />
-                    <ComicCard comic={comics[7]} />
-                    <ComicCard comic={comics[8]} />
-                    <ComicCard comic={comics[9]} />
-                    <ComicCard comic={comics[10]} />
-                    <ComicCard comic={comics[11]} />
-                </div>
-                <div className="load-more-container">
-                    <button className="load-more-btn">LOAD MORE</button>
-                </div>
-            </div>
-        </section>
-    );
+
+        </>
+    )
 }
 
-export default ListComics;
+export default ListComics

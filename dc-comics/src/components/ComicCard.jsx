@@ -1,12 +1,16 @@
-import React from 'react'
-
-const ComicCard = ({ comic }) => {
+const ComicsCard = (props) => {
     return (
-        <div className='comic-card'>
-            <img src={comic.thumb} alt={comic.title} className='card-img' />
-            <h3 className='card-txt'>{comic.series}</h3>
-        </div>
+        <>
+            <div className="card">
+                <div className="card-img">
+                    <img src={props.thumb} alt="Thumbnail" />
+                </div>
+                <div className="card-txt">
+                    <span>{props.title || 'No title'}</span>
+                </div>
+            </div>
+        </>
     )
 }
 
-export default ComicCard;
+export default ComicsCard

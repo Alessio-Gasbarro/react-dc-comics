@@ -2,215 +2,112 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-
-}
-
-/* HEADER */
-header.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: black;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-li {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.container ul li a:hover {
-  color: #0D6EFD;
-  border-bottom: 5px solid #0D6EFD;
-  padding-bottom: 55px;
-}
-
-/* MAIN CONTENT */
-main .container1 {
-  background-color: #1c1c1c;
-  padding: 60px;
-  padding-left: 50px;
-  color: white;
-  font-size: 15px;
-}
-
-main .container2 {
-  background-color: #0D6EFD;
-  padding: 80px;
-}
-
-.container2 a {
-  color: #fafcfe;
-}
-
-.container2 a:hover {
-  color: #fafcfe;
+  color: inherit;
   cursor: pointer;
 }
 
-.container2 ul {
+
+/* containers and layout */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.col-40 {
+  width: 40%;
+  padding: 40px 0;
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.col-33 {
+  width: calc(100% / 3);
+}
+
+.d-flex {
   display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
 }
 
-.logo {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-  vertical-align: middle;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-/*FOOTER*/
-.footer-list {
-  background-image: url('/img/footer-bg.jpg');
-  height: 450px;
-  background-size: cover;
-  background-position: middle;
+.justify-between {
+  justify-content: space-between;
 }
 
-.containerfoot {
-  padding: 60px;
-  padding-left: 200px;
+.align-center {
+  align-items: center;
 }
 
-.footer-columns {
-  display: flex;
-  gap: 30px;
+/* HEADER */
+header {
   width: 100%;
-}
-
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.footer-col ul {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  align-items: flex-start;
-}
-
-.footer-col h2 {
-  color: white;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.footer-col ul li a {
-  color: #959595;
-  font-size: 14px;
-  transition: color 0.3s;
-  text-decoration: none;
-}
-
-/*FOOTERLIST*/
-.foot-list-container {
-  padding-top: 20px;
-  background-color: #303030;
-  height: 100px;
-}
-
-.footer-follow {
-  background-color: #303030;
-  padding: 30px 0;
-}
-
-.footer-follow-content {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  color: #4B525D;
 }
 
-.footer-signup {
-  padding-left: 15px;
+header img {
+  width: 100px;
+  padding: 20px 0;
 }
 
-.footer-signup-btn {
-  background-color: transparent;
-  color: white;
-  border: 2px solid #0282f9;
-  padding: 15px 25px;
+header ul {
+  display: flex;
+  list-style: none
+}
+
+header ul li {
+  margin-left: 30px;
   font-weight: bold;
   cursor: pointer;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-.footer-social {
-  padding-right: 15px;
+  height: 140px;
   display: flex;
   align-items: center;
 }
 
-.footer-social-title {
-  color: #0282f9;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 20px;
-  text-transform: uppercase;
+header ul li:hover,
+.active {
+  color: #0282F9;
+  text-decoration: underline;
+  text-underline-offset: 60px;
+  text-decoration-thickness: 7px;
+  text-decoration-color: #0282F9;
 }
 
-.footer-social-list {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+/* MAIN */
+.bg-black {
+  background-color: #1C1C1C;
+  color: white;
 }
 
-.footer-social-item {
-  display: flex;
-  align-items: center;
+.bg-blue {
+  background-color: #0282F9;
+  color: white;
 }
 
-.footer-social-link img {
-  width: 35px;
-  height: 35px;
+.content {
+  padding: 40px 0;
 }
 
-/*CARD*/
-.card-container {
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-.comics-list {
-  background-color: #303030;
-  height: auto;
-}
-
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.comic-card {
+/* CARDS */
+.card {
   width: calc(100% / 6);
   padding: 20px 20px;
+  /* text-align: center; */
   text-transform: uppercase;
 }
 
@@ -221,41 +118,120 @@ main .container2 {
   margin-bottom: 20px;
 }
 
-.comic-card h3 {
-  color: white;
-  font-size: 12px;
+.card-img img {
+  max-width: 100%;
 }
 
-/*JUMBOTRON*/
-.comics-header {
-  background-image: url(../public/img/jumbotron.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-}
-
-.current-series-badge {
-  position: absolute;
-  top: 520px;
-  left: 20%;
-  background-color: #0282f9;
-  color: white;
-  padding: 10px 30px;
-  font-weight: bold;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.load-more-container {
-  display: flex;
+/* BONUS BUTTONS AND ICONS */
+.main-buttons li {
+  width: calc(100% / 5);
+  cursor: pointer;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.load-more-btn {
-  background-color: #0282f9;
+.main-buttons li img {
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.main-buttons li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+/* FOOTER */
+
+/* upper footer */
+.upper-footer {
+  /* padding: 40px 0; */
+  background-image: url('../src/assets/img/footer-bg.jpg');
+  background-size: cover;
   color: white;
-  padding: 10px 30px;
+}
+
+.upper-footer h4 {
+  margin-bottom: 20px;
+  font-size: 25px;
   font-weight: bold;
-  font: size 10px;
-  border-color: #0282f9;
+}
+
+.upper-footer ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.upper-footer ul li {
+  padding: 5px 0;
+  font-size: 15px;
+  color: gray;
+}
+
+.upper-footer .large-logo {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.upper-footer .large-logo img {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+/* lower footer */
+.lower-footer {
+  padding: 40px 0;
+  background-color: #303030;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 3px solid #0282F9;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+}
+
+.lower-footer h3 {
+  color: #0282F9;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.lower-footer .right-footer {
+  gap: 30px;
+}
+
+.lower-footer .right-footer ul {
+  list-style: none;
+  gap: 20px;
+}
+
+/* footer hover animations */
+.upper-footer ul li:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.lower-footer button:hover {
+  background-color: #0282F9;
+  transition: all 0.3s;
+}
+
+.lower-footer h3:hover {
+  color: white;
+  transition: all 0.3s;
+}
+
+.lower-footer ul li:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
