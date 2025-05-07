@@ -12,7 +12,7 @@ const Header = () => {
                 <div>
                     <ul>
                         <li><a href="#">CHARACTERS</a></li>
-                        <li className='active'><a href="#">COMICS</a></li>
+                        <li><a href="#">COMICS</a></li>
                         <li><a href="#">MOVIES</a></li>
                         <li><a href="#">TV</a></li>
                         <li><a href="#">GAMES</a></li>
@@ -28,4 +28,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;
